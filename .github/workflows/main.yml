@@ -1,7 +1,5 @@
 name: s3-deployment
-on:
-  release:
-    types: [created]
+on: [push, pull_request]
 jobs:
   build:
     runs-on: ubuntu-latest
